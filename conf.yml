@@ -1,9 +1,13 @@
-ya_tr_api: "your api key"
+ya_tr_api: "trnsl.1.1.20190908T221455Z.41ec2b7fd01371ab.1eb8100089e6e2149768376c66d9d746b434ed3e"
 sentiment:
 - Positive
 - Negative
 - Mixed
 - Neutral
+langs:
+- ru
+- en
+- pt
 bugs:
 - Bug
 - RAM
@@ -18,28 +22,90 @@ bugs:
 - Fingerprint
 - Not Work
 tags:
-- Ads
-- Chat
-- App Version
-- Audio
-- Subscription
-- Sending
-- Money & Pricing
-- Heavy user
-- Spam
-- Convenient
-- Troublesome
+- Bugs
 - Feature Request
-- Casino
-- Complicated
-- Delete app
+- Doesnt work
 - UI/UX Design
-- Account
-- Storage
-- Video
-- Photo
+- Notifications
+- Optimization
+- Troublesome
+- Login & Sign In
+- Billing
+- Pricing
+- Support
+- Trial
+- App Update
+- Ads
+- Issue
+- Crashes
+- Payment
 - Thank you
-- Service
-- Promo code
+- Subscription
+- Delete app
+- Connection
+- Account
+- App Freeze
+- Geo
+- Photo
+- Chat
+- Access
+- Boring
+- Spam
 - Fraud
-- App Icon
+- Complicated
+- Imba
+- Video
+- Sound
+- Promo code
+- Established user
+colors:
+- "#078079"
+- "#1A8F65"
+- "#37C560"
+- "#5AD499"
+- "#9AC85D"
+- "#D3FF8D"
+- "#A80F1E"
+- "#BE3A47"
+- "#DE4444"
+- "#FD324C"
+- "#EF309A"
+- "#D93E76"
+- "#FF5880"
+- "#FF7E8F"
+- "#FFC8D6"
+- "#E58700"
+- "#FD9C35"
+- "#F0C458"
+- "#FFD67C"
+- "#F9E4AD"
+- "#FFDA1A"
+- "#FFF735"
+- "#7D2EAB"
+- "#B54AFC"
+- "#9D84FF"
+- "#A5B2FF"
+- "#D1C5FF"
+- "#3A9DB2"
+- "#14C1AE"
+- "#86DEDF"
+- "#BCF8F4"
+- "#A8D5FD"
+- "#67ABFD"
+- "#4B8CF3"
+- "#3970FF"
+- "#544BFC"
+- "#114691"
+- "#ECEDEF"
+- "#B8B8B8"
+- "#818F90"
+- "#889EB4"
+- "#59738D"
+- "#CC4749"
+- "#E23325"
+- "#EB4E36"
+- "#F1765E"
+- "#F7AE9F"
+- "#FFE7E6"
+- "#CC4749"
+- "#E23325"

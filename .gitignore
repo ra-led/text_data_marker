@@ -4,3 +4,5 @@ data_cache
 .idea
 .pytest_cache
 *.xlsx
+*.csv
+*.db

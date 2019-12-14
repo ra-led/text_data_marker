@@ -25,18 +25,21 @@ def ru_mark_start():
 
 @app.route('/ru_mark', methods=['POST'])
 def ru_mark_next():
-    params = request.form.to_dict()
+    try:
+        params = request.form.to_dict()
 
-    i = int(params.pop('index'))
+        i = int(params.pop('index'))
 
-    if (i + 1) < app.config['marker'].df.shape[0]:
-        i += 1
-    else:
-        app.config['marker'].srore_xlsx('marked_r_ru.xlsx')
+        if (i + 1) < app.config['marker'].df.shape[0]:
+            i += 1
+        else:
+            app.config['marker'].srore_xlsx('marked_r_ru.xlsx')
 
-    sample = app.config['marker'].df.iloc[i]
+        sample = app.config['marker'].df.iloc[i]
 
-    app.config['marker'].save_row(sample['Title'], sample['Review'], params)
+        app.config['marker'].save_row(sample['Title'], sample['Review'], params)
+    except:
+        app.config['marker'].srore_xlsx(f'marked_r.xlsx')
 
     return render_template(
         'ru_mark.html',

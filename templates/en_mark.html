@@ -13,39 +13,23 @@
         <a href ="/"><h2 class="w3-text-blue">Разметка отзывов</h2></a>
         <div class="w3-container w3-card-4">
             <form class="w3-container" method="POST" action="/en_mark">
+                <p> FROM: {{ source|safe }} </p>
                 <p> Title: {{ title|safe }} </p>
-                <p> Review: {{ review|safe }} </p>
+                <p> Review: {{ content|safe }} </p>
                 <p> Перевод: {{ translated|safe }} </p>
-                <p>
-                    <input class="w3-input w3-border" name="index" type="text" value="{{ i|safe }}">
-                    <label class="w3-text-blue"><b> из {{ total|safe }}</b></label>
-                </p>
-                <p><b>Semantic</b></p>
-                <p>
-                    {% for c in sem %}
-                        <input class="w3-radio w3-margin-left" type="radio" name="sem" value="{{c}}">
-                        <label>{{c}}</label>
-                    {% endfor %}
+                <p style="display:none;">
+                    <input type="text" name="title" value="{{ title|safe }}"><br>
+                    <input type="text" name="content" value="{{ content|safe }}"><br>
                 </p>
                 <p><b>Tag</b></p>
                 <p>
-                    {% for c in tag %}
-                        <input class="w3-check w3-margin-left" type="checkbox" name="{{c}}" value=1>
-                        <label>{{c}}</label>
-                    {% endfor %}
-                </p>
-                <p><b>Bug</b></p>
-                <p>
-                    {% for c in bug %}
-                        <input class="w3-check w3-margin-left" type="checkbox" name="{{c}}" value=1>
-                        <label>{{c}}</label>
-                    {% endfor %}
+                    {{ tags|safe }}
                 </p>
                 <button class="w3-btn w3-blue" type="submit">Следующий</button>
             </form>
         </div>
         <div class="w3-panel w3-padding-large">
-            <a href="/early_stop">Остановить и сохранить в Excel</a>
+            <a href="/early_stop">Остановить и обновить en_probs.csv</a>
         </div>
     </body>
 </html>
